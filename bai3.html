@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=prompt('Enter a number: ');
+        let numbers = [-3, 5, 1, 3, 2, 10]
+        let check=0;
+        for(let i=0;i<numbers.length;i++){
+            if(numbers[i]==Number(a)){
+                alert("Vị trí của phần tử: "+i)
+                check=1;
+            }
+        }
+        if(check==0){
+            alert("Phần tử không có trong mảng")
+        }
+    </script>
+</body>
+</html>
