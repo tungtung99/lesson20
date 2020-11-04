@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tumoi=prompt("Nhập từ cần tìm")
+        var tuso1 = {
+            English: 'Apple',
+            Vietnamese: 'Quả Táo'
+        }
+        var tuso2 = {
+            English: 'Orange',
+            Vietnamese: 'Quả Cam'
+        }
+        var tuso3 = {
+            English: 'Banana',
+            Vietnamese: 'Quả Chuối'
+        }
+        var tuso4 = {
+            English: 'Student',
+            Vietnamese: 'Học Sinh'
+        }
+        var tuso5 = {
+            English: 'Teacher',
+            Vietnamese: 'Giáo viên'
+        }
+        var tudien = new Array(tuso1,tuso2,tuso3,tuso4,tuso5)
+        let check=0;
+        for(let i=0;i<tudien.length;i++){
+            if(tumoi==tudien[i].English){
+                alert(tudien[i].Vietnamese)
+                check=1;
+            }
+        }
+        if(check==0){
+            alert("Không tìm thấy từ")
+        }
+    </script>
+</body>
+</html>
