@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="h3"></h3>
+    <script>
+        let h3=document.getElementById('h3');
+        let arrayso= new Array(1,2,3,4,5,6,7,8,9,10);
+        let check=arrayso.length;
+        let arraysodaonguoc=new Array(check)
+        for(let i=0;i<arraysodaonguoc.length;i++){
+            arraysodaonguoc[check-1]=arrayso[i];
+            check--;
+        }
+        for(let i=0;i<arrayso.length;i++){
+            arrayso[i]=arraysodaonguoc[i];
+        }
+        for(let i=0;i<arrayso.length;i++){
+            h3.innerText += arrayso[i]+'\n';
+        }
+    </script>
+</body>
+</html>
